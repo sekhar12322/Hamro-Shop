@@ -1,3 +1,4 @@
+
 <!-- jQuery -->
 <script src="{{asset('public/adminpanel/assets/js/jquery-3.2.1.min.js')}}"></script>
 
@@ -13,8 +14,11 @@
 <script src="{{asset('public/adminpanel/assets/plugins/raphael/raphael.min.js')}}"></script>
 <script src="{{asset('public/adminpanel/assets/js/chart.js')}}"></script>
 
+
 <!-- Custom JS -->
 <script src="{{asset('public/adminpanel/assets/js/app.js')}}"></script>
+
+@yield('js')
 
 </body>
 </html>

@@ -17,7 +17,20 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/admin/login', 'AdminLoginController@adminLogin')->name( 'adminLogin');
+Route::prefix('/admin')->group(function(){
+    //admin login route
+    Route::match(['get', 'post'], '/login', 'AdminLoginController@adminLogin')->name('adminLogin');
 
+        Route::group(['middleware' => ['admin']], function(){
+        //admin dashboard route
+        Route::get('/dashboard', 'AdminLoginController@dashboard')->name('adminDashboard');
 
-Route::get('/admin/dashboard', 'AdminLoginController@dashboard')->name('adminDashboard');
+        //admin profile Route
+        Route::get('/profile', 'AdminProfileController@profile')->name('profile');
+
+        //admin profile update
+         Route::post('/profile/update/{id}', 'AdminProfileController@updateProfile')->name('updateProfile');
+    });
+});
+
+Route::get('/admin/logout', 'AdminLoginController@adminLogout')->name('adminLogout');
