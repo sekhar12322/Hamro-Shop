@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a107ace-82fa-450f-952c-211e80e02f6d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/hamroshop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hamroshop.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminLoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminLoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminProfileController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/includes/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/includes/head.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/includes/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/includes/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/includes/script.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/includes/script.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/profile.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-56">
-              <caret column="5" selection-start-column="5" selection-end-column="5" />
+            <state relative-caret-position="522">
+              <caret line="37" column="118" selection-start-line="37" selection-start-column="118" selection-end-line="37" selection-end-column="118" />
             </state>
           </provider>
         </entry>
@@ -43,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/includes/header.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="51" column="59" selection-start-line="51" selection-start-column="59" selection-end-line="51" selection-end-column="59" />
+            <state relative-caret-position="573">
+              <caret line="57" column="66" selection-start-line="57" selection-start-column="66" selection-end-line="57" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -52,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/includes/head.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="542">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="114">
+              <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -61,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminProfileController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="54" column="52" selection-start-line="54" selection-start-column="52" selection-end-line="54" selection-end-column="52" />
+            <state relative-caret-position="-5">
+              <caret line="52" column="37" lean-forward="true" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
               <folding>
                 <element signature="e#40#61#0#PHP" expanded="true" />
               </folding>
@@ -71,10 +62,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/changePassword.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="117" column="14" selection-start-line="117" selection-start-column="14" selection-end-line="117" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/profile.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="131" column="8" lean-forward="true" selection-start-line="131" selection-start-column="8" selection-end-line="131" selection-end-column="8" />
+            <state relative-caret-position="284">
+              <caret line="117" column="14" lean-forward="true" selection-end-line="133" selection-end-column="15" />
               <folding>
                 <element signature="e#4382#4401#0#HTML" expanded="true" />
               </folding>
@@ -113,12 +113,13 @@
         <option value="$PROJECT_DIR$/app/Http/Middleware/AdminMiddleware.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AdminLoginController.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/includes/script.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/profile.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/includes/header.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AdminProfileController.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/includes/script.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/includes/head.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/profile.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/changePassword.blade.php" />
       </list>
     </option>
   </component>
@@ -258,28 +259,28 @@
             <path>
               <item name="hamroshop" type="b2602c69:ProjectViewProjectNode" />
               <item name="hamroshop" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hamroshop" type="b2602c69:ProjectViewProjectNode" />
               <item name="hamroshop" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="adminpanel" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hamroshop" type="b2602c69:ProjectViewProjectNode" />
               <item name="hamroshop" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="adminpanel" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hamroshop" type="b2602c69:ProjectViewProjectNode" />
               <item name="hamroshop" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="adminpanel" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="includes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -323,12 +324,12 @@
       <updated>1621585539297</updated>
       <workItem from="1621585541981" duration="10671000" />
       <workItem from="1621667622690" duration="10399000" />
-      <workItem from="1621682659658" duration="3723000" />
+      <workItem from="1621682659658" duration="7256000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24920000" />
+    <option name="totallyTimeSpent" value="28453000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -497,13 +498,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-56">
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Raw/orange/orange/settings.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="505">
@@ -511,13 +505,6 @@
           <folding>
             <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/includes/header.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="51" column="59" selection-start-line="51" selection-start-column="59" selection-end-line="51" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -542,10 +529,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/profile.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="117" column="14" lean-forward="true" selection-end-line="133" selection-end-column="15" />
+          <folding>
+            <element signature="e#4382#4401#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/includes/header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="573">
+          <caret line="57" column="66" selection-start-line="57" selection-start-column="66" selection-end-line="57" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="37" column="118" selection-start-line="37" selection-start-column="118" selection-end-line="37" selection-end-column="118" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminProfileController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="54" column="52" selection-start-line="54" selection-start-column="52" selection-end-line="54" selection-end-column="52" />
+        <state relative-caret-position="-5">
+          <caret line="52" column="37" lean-forward="true" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
           <folding>
             <element signature="e#40#61#0#PHP" expanded="true" />
           </folding>
@@ -554,18 +565,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/includes/head.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="114">
+          <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/profile.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/changePassword.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="131" column="8" lean-forward="true" selection-start-line="131" selection-start-column="8" selection-end-line="131" selection-end-column="8" />
-          <folding>
-            <element signature="e#4382#4401#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="420">
+          <caret line="117" column="14" selection-start-line="117" selection-start-column="14" selection-end-line="117" selection-end-column="14" />
         </state>
       </provider>
     </entry>

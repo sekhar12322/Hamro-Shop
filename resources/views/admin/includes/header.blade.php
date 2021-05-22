@@ -28,17 +28,22 @@
     <!-- Header Menu -->
     <ul class="nav user-menu">
 
+        @php
+        $current_user = Auth::guard('admin')->user();
+
+        @endphp
+
 
 
         <li class="nav-item dropdown has-arrow main-drop">
             <a href="index.html#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-							<span class="user-img"><img src="{{asset('public/adminpanel/assets/img/profiles/avatar-21.jpg')}}" alt="">
+							<span class="user-img"><img src="{{asset('public/uploads/admin/'. $current_user->image)}}" alt="">
 							<span class="status online"></span></span>
-                <span>Admin</span>
+                <span>{{$current_user->name}}</span>
             </a>
             <div class="dropdown-menu">
                 <a class="dropdown-item" href="{{route('profile')}}">My Profile</a>
-                <a class="dropdown-item" href="settings.html">Settings</a>
+                <a class="dropdown-item" href="{{route('changePassword')}}">Change Password</a>
                 <a class="dropdown-item" href="{{route('adminLogout')}}">Logout</a>
             </div>
         </li>
@@ -50,7 +55,7 @@
         <a href="index.html#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
         <div class="dropdown-menu dropdown-menu-right">
             <a class="dropdown-item" href="{{route('profile')}}">My Profile</a>
-            <a class="dropdown-item" href="settings.html">Settings</a>
+            <a class="dropdown-item" href="{{route('changePassword')}}">Change Password</a>
             <a class="dropdown-item" href="{{route('adminLogout')}}">Logout</a>
         </div>
     </div>
