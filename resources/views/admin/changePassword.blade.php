@@ -1,5 +1,7 @@
 @extends('admin.includes.admin_design')
 
+<title>Password Update - {{ config('app.name', 'Laravel') }}</title>
+
 @section('content')
     <!-- Page Wrapper -->
     <div class="page-wrapper">
@@ -19,39 +21,12 @@
                     </div>
                     <!-- /Page Header -->
 
-                    {{--                 @if ($error->any())--}}
-                    {{--                     <div class="alert alert-danger">--}}
-                    {{--                         <ul>--}}
-                    {{--                             @foreach($errors->all()as$error)--}}
-                    {{--                                 <li>{{error}}</li>--}}
-                    {{--                                 @endforeach--}}
-                    {{--                         </ul>--}}
-                    {{--                     </div>--}}
-                    {{--                    @endif--}}
-
-                    @if ($errors->any())
-                        <div class="alert alert-danger">
-                            <ul>
-                                @foreach ($errors->all() as $error)
-                                    <li>{{ $error }}</li>
-                                @endforeach
-                            </ul>
-                        </div>
-                    @endif
 
 
-                    @if(Session::has('success_message'))
-
-                        <div class="alert alert-success alert-dismissible fade show" role="alert">
-                            {{Session::get('success_message')}}
-                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                    @endif
+@include('admin.includes._message')
 
 
-                    <form method="post" action="" enctype="multipart/form-data">
+                    <form method="post" action="{{route('updatePassword', $user->id)}}" enctype="multipart/form-data">
                         @csrf
                         <div class="row">
                             <div class="col-sm-12">

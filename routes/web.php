@@ -22,20 +22,23 @@ Route::prefix('/admin')->group(function(){
     Route::match(['get', 'post'], '/login', 'AdminLoginController@adminLogin')->name('adminLogin');
 
         Route::group(['middleware' => ['admin']], function(){
-        //admin dashboard route
-        Route::get('/dashboard', 'AdminLoginController@dashboard')->name('adminDashboard');
+            //admin dashboard route
+            Route::get('/dashboard', 'AdminLoginController@dashboard')->name('adminDashboard');
 
-        //admin profile Route
-        Route::get('/profile', 'AdminProfileController@profile')->name('profile');
+            //admin profile Route
+            Route::get('/profile', 'AdminProfileController@profile')->name('profile');
 
-        //admin profile update
-         Route::post('/profile/update/{id}', 'AdminProfileController@updateProfile')->name('updateProfile');
+            //admin profile update
+             Route::post('/profile/update/{id}', 'AdminProfileController@updateProfile')->name('updateProfile');
 
-         //change password
+             //change password
             Route::get('/profile/change_password', 'AdminProfileController@changePassword')->name('changePassword');
 
             //check current password
             Route::post('/profile/check-password', 'AdminProfileController@chkUserPassword')->name('chkUserPassword');
+
+            //update admin password
+            Route::post('/profile/update_password/{id}', 'AdminProfileController@updatePassword')->name('updatePassword');
     });
 });
 

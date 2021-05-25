@@ -7,7 +7,7 @@
     <meta name="robots" content="noindex, nofollow">
     <meta name="csrf-token" content="{{ csrf_token()}}"
 
-    <title>Ecommerce Admin Panel</title>
+    <title>@yield('title')</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('public/adminpanel/assets/img/favicon.png')}}">

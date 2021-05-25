@@ -65,7 +65,8 @@ class AdminProfileController extends Controller
 
 //Admin Passwod Update
 public function changePassword(){
-        return view('admin.changePassword');
+        $user = Admin::where('email', Auth::guard('admin')->user()->email)->first();
+        return view('admin.changePassword', compact('user'));
 }
 
 
@@ -80,6 +81,28 @@ public function chkUserPassword(Request $request){
             return "true"; die;
         }else{
             return "false"; die;
+        }
+    }
+
+
+    //update admin password
+    public function UpdatePassword(Request $request, $id){
+        $validateData = $request->validate([
+            'current_password' =>  'required|max:255|min:6',
+            'password' => 'required|min:6',
+            'confirm_password' => 'required_with:password|same:password|min:6'
+        ]);
+        $user = Admin::where('email', Auth::guard('admin')->user()->email)->first();
+        $current_user_password = $user->password;
+        $data = $request->all();
+        if (Hash::check($data['current_password'], $current_user_password)){
+            $user->password = bcrypt($data['password']);
+            $user->save();
+            Session::flash('success_message', 'Admin Profile has been updated successfully');
+            return redirect()->back();
+        } else {
+            Session::flash('error_message', 'Your current password doesnt match with database');
+            return redirect()->back();
         }
     }
 }

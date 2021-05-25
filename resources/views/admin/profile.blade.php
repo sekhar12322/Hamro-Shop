@@ -1,5 +1,8 @@
 @extends('admin.includes.admin_design')
 
+{{--@section('title') Admin Profile -  {{ config('app.name', 'Laravel') }} @endsection--}}
+<title>Admin Profile - {{ config('app.name', 'Laravel') }}</title>
+
 @section('content')
     <!-- Page Wrapper -->
     <div class="page-wrapper">
@@ -19,15 +22,7 @@
                     </div>
                     <!-- /Page Header -->
 
-{{--                 @if ($error->any())--}}
-{{--                     <div class="alert alert-danger">--}}
-{{--                         <ul>--}}
-{{--                             @foreach($errors->all()as$error)--}}
-{{--                                 <li>{{error}}</li>--}}
-{{--                                 @endforeach--}}
-{{--                         </ul>--}}
-{{--                     </div>--}}
-{{--                    @endif--}}
+
 
                     @if ($errors->any())
                         <div class="alert alert-danger">
